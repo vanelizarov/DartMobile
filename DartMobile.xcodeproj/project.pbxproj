@@ -12,9 +12,12 @@
 		41E933B42221BEBB00E29A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E933B22221BEBB00E29A38 /* Main.storyboard */; };
 		41E933B62221BEBC00E29A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E933B52221BEBC00E29A38 /* Assets.xcassets */; };
 		41E933B92221BEBC00E29A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E933B72221BEBC00E29A38 /* LaunchScreen.storyboard */; };
+		41E933C12221C63B00E29A38 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E933C02221C63B00E29A38 /* Api.swift */; };
+		E7C432EB7B5C66B65403E8A2 /* Pods_DartMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F1DFA660110583F1E089CD /* Pods_DartMobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F90264EA1998D199D66A33A /* Pods-DartMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartMobile.debug.xcconfig"; path = "Target Support Files/Pods-DartMobile/Pods-DartMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		41E933AB2221BEBB00E29A38 /* DartMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DartMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E933AE2221BEBB00E29A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41E933B02221BEBB00E29A38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		41E933B52221BEBC00E29A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E933B82221BEBC00E29A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41E933BA2221BEBC00E29A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E933C02221C63B00E29A38 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		62361E6F91FB84C080FFD864 /* Pods-DartMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DartMobile.release.xcconfig"; path = "Target Support Files/Pods-DartMobile/Pods-DartMobile.release.xcconfig"; sourceTree = "<group>"; };
+		A8F1DFA660110583F1E089CD /* Pods_DartMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DartMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C432EB7B5C66B65403E8A2 /* Pods_DartMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				41E933AD2221BEBB00E29A38 /* DartMobile */,
 				41E933AC2221BEBB00E29A38 /* Products */,
+				7075609A169B9C0BB07791CA /* Pods */,
+				799E694555E3170264AEF123 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		41E933AD2221BEBB00E29A38 /* DartMobile */ = {
 			isa = PBXGroup;
 			children = (
+				41E933C02221C63B00E29A38 /* Api.swift */,
 				41E933AE2221BEBB00E29A38 /* AppDelegate.swift */,
 				41E933B02221BEBB00E29A38 /* ViewController.swift */,
 				41E933B22221BEBB00E29A38 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = DartMobile;
 			sourceTree = "<group>";
 		};
+		7075609A169B9C0BB07791CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F90264EA1998D199D66A33A /* Pods-DartMobile.debug.xcconfig */,
+				62361E6F91FB84C080FFD864 /* Pods-DartMobile.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		799E694555E3170264AEF123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8F1DFA660110583F1E089CD /* Pods_DartMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E933BD2221BEBC00E29A38 /* Build configuration list for PBXNativeTarget "DartMobile" */;
 			buildPhases = (
+				D8B4D60C1BA9474B58149E9C /* [CP] Check Pods Manifest.lock */,
 				41E933A72221BEBB00E29A38 /* Sources */,
 				41E933A82221BEBB00E29A38 /* Frameworks */,
 				41E933A92221BEBB00E29A38 /* Resources */,
+				EC5E32CE0BFDDB3F829A5B0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8B4D60C1BA9474B58149E9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DartMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5E32CE0BFDDB3F829A5B0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DartMobile/Pods-DartMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DartMobile/Pods-DartMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41E933A72221BEBB00E29A38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E933C12221C63B00E29A38 /* Api.swift in Sources */,
 				41E933B12221BEBB00E29A38 /* ViewController.swift in Sources */,
 				41E933AF2221BEBB00E29A38 /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +347,7 @@
 		};
 		41E933BE2221BEBC00E29A38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F90264EA1998D199D66A33A /* Pods-DartMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		41E933BF2221BEBC00E29A38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62361E6F91FB84C080FFD864 /* Pods-DartMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
